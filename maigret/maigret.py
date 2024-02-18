@@ -10,6 +10,7 @@ import platform
 from argparse import ArgumentParser, RawDescriptionHelpFormatter
 from typing import List, Tuple
 import os.path as path
+from .utils import run_maigret
 
 from socid_extractor import extract, parse
 
