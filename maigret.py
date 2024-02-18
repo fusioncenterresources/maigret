@@ -23,3 +23,7 @@ if __name__ == "__main__":
     # Assuming the first CLI argument is the username
     username = sys.argv[1] if len(sys.argv) > 1 else ""
     run_maigret(username)
+
+
+if __name__ == "__main__":
+    run()
