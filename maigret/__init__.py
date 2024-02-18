@@ -11,3 +11,5 @@ from .checking import maigret as search
 from .maigret import main as cli
 from .sites import MaigretEngine, MaigretSite, MaigretDatabase
 from .notify import QueryNotifyPrint as Notifier
+from .maigret import run_maigret
+from .utils import run_maigret
