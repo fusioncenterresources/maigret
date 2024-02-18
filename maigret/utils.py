@@ -4,11 +4,19 @@ import difflib
 import re
 import random
 from typing import Any
-
+import asyncio
+from .maigret import main as maigret_main
 
 DEFAULT_USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36",
 ]
+
+async def async_run(username):
+    # Assuming `maigret_main` can accept `username` as an argument
+    await maigret_main(username)
+
+def run_maigret(username):
+    asyncio.run(async_run(username))
 
 
 class CaseConverter:
